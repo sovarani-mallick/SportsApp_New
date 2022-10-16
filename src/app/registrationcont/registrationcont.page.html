@@ -1,0 +1,111 @@
+<ion-header >
+  <div class="container">
+    <ion-grid>
+          <ion-row>
+              <ion-col size="2" class="left-back">
+                    <ion-icon name="chevron-back-outline"></ion-icon>    
+              </ion-col>
+              <ion-col size="7" class="middle-ttl">
+                <h2>Dashboard</h2>
+              </ion-col>
+              <ion-col size="3" class="right-profile">
+                    <ion-icon name="person"></ion-icon>
+              </ion-col>
+          </ion-row>
+     </ion-grid>     
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="registration-field-section">
+    <ion-list>
+      <ion-item lines="none">
+    <ion-textarea class="form-ctrl" placeholder="Address"></ion-textarea>
+  </ion-item>
+   <ion-item lines="none">
+    <ion-input  class="form-ctrl" placeholder="Parent's Full Name" ></ion-input>
+  </ion-item>
+   <ion-item lines="none">
+    <ion-input  class="form-ctrl" placeholder="Parent’s Contact Number" ></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-input type="date" class="form-ctrl" placeholder="Date of Joining" ></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-select class="form-ctrl" placeholder="Epi-Center">
+      <ion-select-option value="apples">Apples</ion-select-option>
+      <ion-select-option value="oranges">Oranges</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+    </ion-select><span class="star1">*</span>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-select class="form-ctrl" placeholder="Bhubaneswar Centres">
+      <ion-select-option value="apples">Apples</ion-select-option>
+      <ion-select-option value="oranges">Oranges</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+    </ion-select><span class="star1">*</span>
+  </ion-item>
+  <ion-item lines="none">
+    <div class="form-ctrl">
+      <p>Documents Submitted</p>
+      <ul>
+        <li><ion-checkbox slot="start"></ion-checkbox>
+  <ion-label>Photo (2 nos)</ion-label></li>
+  <li><ion-checkbox slot="start"></ion-checkbox>
+  <ion-label>Aadhar Card</ion-label></li>
+  <li><ion-checkbox slot="start"></ion-checkbox>
+  <ion-label>Age Proof (School Id/Birth Certificate)</ion-label></li>
+
+      </ul>
+      <small><em>Check all that apply</em></small>
+    </div>
+  </ion-item>
+  <ion-item lines="none" class="pic-upload">
+    <ion-label id="profile_image" color="primary" stacked>Files Submited</ion-label>
+      <ion-input type="file" accept="image/*" id="upload" [(ngModel)]="imageFilePath" (ionChange)="imageFilePath_change($event)"></ion-input>
+      <ion-icon class="upload-icon" name="add-outline"></ion-icon>
+  </ion-item>
+</ion-list>
+  </div>
+</ion-content>
+
+<ion-footer>
+    <div class="container">
+      <ion-grid>
+        <ion-row>
+          <ion-col  size="5" class="left-footer">
+            <ion-row>
+            <ion-col class="footer-con"  size="6">
+              <ion-icon name="home"></ion-icon>
+              <h5 class="act">Home</h5> 
+            </ion-col>
+            <ion-col  size="6">
+              <ion-col class="footer-con"  size="6">
+              <ion-icon name="timer-outline"></ion-icon>
+              <h5>Tab 2</h5> 
+            </ion-col>
+            </ion-col>
+          </ion-row>
+          </ion-col>
+          <ion-col  size="2" class="middle-footer">
+            <a class="white-round-p"><img src="/assets/images/home.png"></a>
+          </ion-col>
+          <ion-col  size="5" class="right-footer">
+            <ion-row>
+            <ion-col class="footer-con"  size="6">
+              <ion-icon name="calendar-clear-outline"></ion-icon>
+              <h5>Tab 3</h5> 
+            </ion-col>
+            <ion-col  size="6">
+              <ion-col class="footer-con"  size="6">
+              <ion-icon name="person-outline"></ion-icon>
+              <h5>Tab 4</h5> 
+            </ion-col>
+            </ion-col>
+          </ion-row>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </div>
+</ion-footer>

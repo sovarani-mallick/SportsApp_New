@@ -1,0 +1,113 @@
+.middle-ttl h2 {
+        font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #0A408A;
+    margin: 7px 0 0 -19px;
+}
+.left-back ion-icon { 
+    padding: 0;
+    font-size: 35px;
+    color: #000;
+}
+
+.header-md::after{
+    display:none;
+}
+.right-profile {
+    text-align: right;
+    vertical-align: middle;
+    margin-top: -7px;
+}
+.right-profile ion-icon {
+    background: #0A408A;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.notificason {
+    margin-right: 12px;
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 15px;
+}
+.row-1{
+    margin-bottom:10px;
+}
+.row-1 img{
+    vertical-align: middle;
+} 
+.row-1 span {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+
+color: #4D4D4D;
+display:inline-block;
+margin-left:10px;
+}
+.left-profile-text h3{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #313131;
+}
+.right-profile-icon ion-icon{
+    background: #0A408A;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0px 0px 8px 2px rgb(0 0 0 / 25%);
+    border-radius: 8px;
+    font-size: 60px;
+    text-align: center;
+    margin: 25px 0px 0 20px;
+    float: right;
+}
+ .payment-row{
+    background:#fff;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+    border-radius: 10px;
+    height: 100%;
+     }
+    .row-prf {
+    width:100%;
+    float:left
+    }
+    .row-prf strong{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #0A408A;
+    }
+.row-prf p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+color: #4D4D4D;
+margin-block-start: 5px !important;
+margin-block-end: 10px !important;
+}
+ion-item {
+    --background: transperent;
+    padding: 0 10px 0 0;
+    --border-color: #d2d0e2 !important;
+    margin-bottom: 20px !important;
+}
+@media (prefers-color-scheme: dark){
+ion-item {
+    --background: transperent;
+    padding: 0 10px 0 0;
+    --border-color: #d2d0e2 !important;
+}
+}   

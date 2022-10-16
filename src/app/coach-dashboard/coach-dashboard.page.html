@@ -1,0 +1,214 @@
+
+
+<ion-header >
+     <ion-grid>
+          <ion-row>
+              <ion-col size="2" class="left-back">
+                    <ion-icon name="menu"></ion-icon>   
+              </ion-col>
+              <ion-col size="6" class="middle-ttl">
+                <h2>Hello <span>Coach! </span></h2>
+              </ion-col>
+              <ion-col size="4" class="right-profile">
+                    <img class="notificason" src="/assets/images/notification-bell.png">
+                    <ion-icon name="person"></ion-icon>
+              </ion-col>
+          </ion-row>
+     </ion-grid>     
+</ion-header>
+<ion-content>
+    
+    <div class="dashboard-header">
+        <ion-grid class="dashboard-header-top">
+          <ion-row>
+              <ion-col size="9" class="dashboard-header-top-left">
+                    <h3>Welcome to your Dashboard!</h3>   
+              </ion-col>
+              <ion-col size="3" class="dashboard-header-top-right">
+                <ion-button size="small">Enquiry</ion-button>
+              </ion-col>
+          </ion-row>
+     </ion-grid> 
+      <ion-grid class="dashboard-header-btm">
+          <ion-row>
+              <ion-col size="3" class="dashboard-header-btm-col">
+                    <img routerLink="/jersey-view" src="/assets/images/soccer-jersey1.png">
+                    <h3 routerLink="/jersey-view">Jersey / Kit</h3>   
+              </ion-col>
+              <ion-col size="3" class="dashboard-header-btm-col">
+                    <img routerLink="/roster"  src="/assets/images/checklist-1.png">
+                    <h3 routerLink="/roster" >Roster</h3>   
+              </ion-col>
+              <ion-col size="3" class="dashboard-header-btm-col">
+                    <img src="/assets/images/checked1.png">
+                    <h3>Attendance</h3>   
+              </ion-col>
+              <ion-col size="3" class="dashboard-header-btm-col">
+                    <img src="/assets/images/debit-card.png">
+                    <h3>Payments</h3>   
+              </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col id="open-modal" expand="block" size="3" class="dashboard-header-btm-col">
+                    <img src="/assets/images/inventory.png">
+                    <h3>Inventory</h3>   
+              </ion-col>
+              <ion-col id="open-modal2" expand="block" size="3" class="dashboard-header-btm-col" >
+                    <img src="/assets/images/accounting.png">
+                    <h3>Expenses</h3>   
+              </ion-col>
+              <ion-col size="3" class="dashboard-header-btm-col">
+                    <img routerLink="/leave-request"  src="/assets/images/stamp.png">
+                    <h3 routerLink="/leave-request"  >Leave</h3>   
+              </ion-col>
+              <ion-col size="3" class="dashboard-header-btm-col">
+                    <img src="/assets/images/event1.png">
+                    <h3>Events</h3>   
+              </ion-col>
+          </ion-row>
+     </ion-grid>  
+    </div>
+    <div class="right-to-play-bdy">
+        <ion-grid>
+          <ion-row>
+              <ion-col size="3" class="right-to-play-left">
+                      <img src="/assets/images/rupee1.png"> 
+              </ion-col>
+              <ion-col size="6" class="right-to-play-mdl">
+                      <h3>Revenue</h3>
+              </ion-col>
+              <ion-col size="3" class="right-to-play-right">
+                      <ion-icon name="chevron-forward-outline"></ion-icon>
+              </ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+    <div class="title-rw">
+      <h2>Events</h2>
+      <a href="#">View All</a>
+    </div>
+    <div class="events-img-section">
+      <div class="img-row">
+      <img src="/assets/images/match-img.jpg">
+      <div class="img-caption">
+        <h5>Football Match</h5>
+      </div>
+     
+    </div>
+    </div>
+<ion-modal class="single-event-apply-modal" trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+    <ng-template>
+      <ion-header>
+          <img class="close-img" (click)="cancel()" src="/assets/images/cancel.png">
+         
+      </ion-header>
+      <ion-content class="ion-padding">
+        <div class="event-pop-form">
+          <div class="registration-field-section">
+    <ion-list>
+      <ion-item lines="none">
+   <ion-button class="custom-button">Acknowledgement</ion-button> 
+  </ion-item>
+  <ion-item lines="none">
+   <ion-button class="custom-button">STOCK</ion-button> 
+  </ion-item>
+  <ion-item lines="none">
+   <ion-button class="custom-button">NEW REQUESTS</ion-button> 
+  </ion-item>
+  <ion-item lines="none">
+   <ion-button class="custom-button">ISSUANCE</ion-button> 
+  </ion-item>
+ 
+</ion-list>
+
+</div>
+  
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+   <ion-modal class="single-event-apply-modal" trigger="open-modal2" (willDismiss)="onWillDismiss($event)">
+    <ng-template>
+      
+      <ion-content class="ion-padding">
+        <img class="close-img" (click)="cancel()" src="/assets/images/cancel.png">
+        <div class="event-pop-form">
+          <div class="registration-field-section">
+    <ion-list>
+      <ion-item lines="none">
+   <ion-button class="custom-button">Acknowledgement</ion-button> 
+  </ion-item>
+  <ion-item lines="none">
+   <ion-button class="custom-button">STOCK</ion-button> 
+  </ion-item>
+  <ion-item lines="none">
+   <ion-button class="custom-button">NEW REQUESTS</ion-button> 
+  </ion-item>
+  <ion-item lines="none">
+   <ion-button class="custom-button">ISSUANCE</ion-button> 
+  </ion-item>
+ <ion-item lines="none">
+   <ion-button class="custom-button">NEW REQUESTS</ion-button> 
+  </ion-item>
+  <ion-item lines="none">
+   <ion-button class="custom-button">ISSUANCE</ion-button> 
+  </ion-item>
+</ion-list>
+
+</div>
+  
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>
+<ion-footer>
+    <div class="container">
+      <ion-grid>
+        <ion-row>
+          <ion-col  size="5" class="left-footer">
+            <ion-row>
+            <ion-col class="footer-con"  size="6">
+              <ion-icon name="home" routerLink="/pre-login-dashboard"></ion-icon>
+              <h5 class="act" routerLink="/pre-login-dashboard" >Home</h5> 
+            </ion-col>
+            <ion-col class="footer-con"  size="6">
+              <ion-col size="6">
+              <ion-icon name="timer-outline"></ion-icon>
+              <h5>Tab 2</h5> 
+            </ion-col>
+                        </ion-col>
+          </ion-row>
+          </ion-col>
+          <ion-col  size="2" class="middle-footer">
+            <a class="white-round-p"><img src="/assets/images/home.png"></a>
+          </ion-col>
+          <ion-col  size="5" class="right-footer">
+            <ion-row>
+            <ion-col class="footer-con"  size="6">
+              <ion-icon name="calendar-clear-outline"></ion-icon>
+              <h5>Tab 3</h5> 
+            </ion-col>
+            <ion-col  class="footer-con"  size="6">
+              <ion-col  size="6">
+              <ion-icon name="person-outline"></ion-icon>
+              <h5>Tab 4</h5> 
+            </ion-col>
+            </ion-col>
+          </ion-row>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </div>
+</ion-footer>
+
+
+
+
+
+
+
+
+
+

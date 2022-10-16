@@ -1,0 +1,109 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+ion-content {
+    --background:#transperent !important;
+    --padding-start: 20px !important;
+    --padding-end: 20px !important;
+}
+.container {
+    padding: 0 20px;
+}
+html{background: #EBF2F7 !important;
+}
+body{
+    background: url("/assets/images/background.png") no-repeat fixed #EBF2F7 !important; 
+    width: 100% !important; 
+background-size: 100% auto !important;
+}
+ion-header {
+    padding-top: 50px;
+        background: transparent
+}
+.header-md::after{
+    display:none;
+}
+.footer-con {
+    text-align: center;
+}
+.footer-con ion-icon{
+    color: #0A408A;
+    font-size: 25px;
+}
+.footer-con h5 {
+    margin-top: 0px;
+    color: #959AB1;
+}
+.footer-con h5.act {
+    margin-top: 0px;
+    color: #0A408A;
+}
+.white-round-p {
+    position: absolute;
+    margin: auto;
+    left: -24px;
+    right: 0;
+    top: -50px;
+    width: 102px;
+    height: 102px;
+}
+ion-footer{
+        height: 85px;
+        background: #fff;
+}
+@media (prefers-color-scheme: dark){
+.form-ctrl::-moz-placeholder {
+  color: black;
+  z-index:9999;
+}
+
+.form-ctrl:-ms-input-placeholder {
+  color: black;
+  z-index:9999;
+}
+
+.form-ctrl::-webkit-input-placeholder {
+  color: black;
+  z-index:9999;
+}
+ion-list{
+    background:#fff;
+}
+.list-md {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    background: #fff !important;
+    padding: 20px 0 !important;
+}
+ion-item{
+    --background:transperent;
+}
+.form-ctrl {
+    color: #333 !important;
+}
+}

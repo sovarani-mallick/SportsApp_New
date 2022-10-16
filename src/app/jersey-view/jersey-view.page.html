@@ -1,0 +1,176 @@
+<ion-header >
+  
+    <ion-grid>
+          <ion-row>
+              <ion-col size="2" class="left-back" >
+                    <ion-icon name="chevron-back-outline" (click)="Back()"></ion-icon>    
+              </ion-col>
+              <ion-col size="4" class="middle-ttl">
+                <h2>Dashboard</h2>
+              </ion-col>
+              <ion-col size="6" class="right-profile">
+                    <img class="notificason" src="/assets/images/notification-bell.png">
+                    <ion-icon name="person"></ion-icon>
+              </ion-col>
+          </ion-row>
+     </ion-grid>     
+
+</ion-header>
+
+<ion-content>
+    <div class="title-rw">
+      <h2>JERSEY VIEW</h2>
+      <ion-icon id="open-modal" expand="block" name="add-circle"></ion-icon>
+      <ion-modal class="single-event-apply-modal" trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+    <ng-template>
+            <ion-content class="ion-padding">
+              <img class="close-img" (click)="cancel()" src="/assets/images/cancel.png">
+        <div class="event-pop-form">
+          <div class="registration-field-section">
+    <ion-list>
+      <ion-item lines="none">
+    <ion-select class="form-ctrl" placeholder="Product Type">
+      <ion-select-option value="apples">Apples</ion-select-option>
+      <ion-select-option value="oranges">Oranges</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-select class="form-ctrl" placeholder="Select Product">
+      <ion-select-option value="apples">Apples</ion-select-option>
+      <ion-select-option value="oranges">Oranges</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-select class="form-ctrl" placeholder="Quantity">
+      <ion-select-option value="apples">Apples</ion-select-option>
+      <ion-select-option value="oranges">Oranges</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-select class="form-ctrl" placeholder="Center">
+      <ion-select-option value="apples">Apples</ion-select-option>
+      <ion-select-option value="oranges">Oranges</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+    </ion-select>
+  </ion-item>
+   <ion-item lines="none">
+   <ion-input type="text" class="form-ctrl" placeholder="Amount" ></ion-input>
+  </ion-item>
+ <ion-item lines="none">
+   <ion-button type="submit" class="custom-button">Submit Request</ion-button> 
+  </ion-item>
+</ion-list>
+
+</div>
+  
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+    </div>
+        <ion-list class="payment-row">
+          
+          <ion-item>
+
+            <div class="left-pay">
+              <div class="row-1">
+                  <img src="/assets/images/calendar.png"> <span>22/08/2022</span>
+              </div>
+              <div class="row-2">
+                  <strong>Field 1</strong> : <span>Text goes here</span>
+              </div>
+              <div class="row-3">
+                  <strong>Field 2</strong> : <span>Text goes here</span>
+              </div>
+              
+            </div>
+            <div class="right-pay">
+              <ion-button size="small">Pending</ion-button>
+            </div>
+          </ion-item>
+
+           <ion-item>
+
+            <div class="left-pay">
+              <div class="row-1">
+                  <img src="/assets/images/calendar.png"> <span>22/08/2022</span>
+              </div>
+              <div class="row-2">
+                  <strong>Field 1</strong> : <span>Text goes here</span>
+              </div>
+              <div class="row-3">
+                  <strong>Field 2</strong> : <span>Text goes here</span>
+              </div>
+              
+            </div>
+            <div class="right-pay">
+              <ion-button size="small" class="green">Accepted</ion-button>
+            </div>
+          </ion-item>
+
+           <ion-item>
+
+            <div class="left-pay">
+              <div class="row-1">
+                  <img src="/assets/images/calendar.png"> <span>22/08/2022</span>
+              </div>
+              <div class="row-2">
+                  <strong>Field 1</strong> : <span>Text goes here</span>
+              </div>
+              <div class="row-3">
+                  <strong>Field 2</strong> : <span>Text goes here</span>
+              </div>
+              
+            </div>
+            <div class="right-pay">
+              <ion-button size="small" class="red">Rejected</ion-button>
+            </div>
+          </ion-item>
+
+
+        </ion-list>
+
+</ion-content>
+<ion-footer>
+    <div class="container">
+      <ion-grid>
+        <ion-row>
+          <ion-col  size="5" class="left-footer">
+            <ion-row>
+            <ion-col class="footer-con"  size="6">
+              <ion-icon name="home"></ion-icon>
+              <h5 class="act">Home</h5> 
+            </ion-col>
+            <ion-col class="footer-con"  size="6">
+              <ion-col size="6">
+              <ion-icon name="timer-outline"></ion-icon>
+              <h5>Tab 2</h5> 
+            </ion-col>
+                        </ion-col>
+          </ion-row>
+          </ion-col>
+          <ion-col  size="2" class="middle-footer">
+            <a class="white-round-p"><img src="/assets/images/home.png"></a>
+          </ion-col>
+          <ion-col  size="5" class="right-footer">
+            <ion-row>
+            <ion-col class="footer-con"  size="6">
+              <ion-icon name="calendar-clear-outline"></ion-icon>
+              <h5>Tab 3</h5> 
+            </ion-col>
+            <ion-col  class="footer-con"  size="6">
+              <ion-col  size="6">
+              <ion-icon name="person-outline"></ion-icon>
+              <h5>Tab 4</h5> 
+            </ion-col>
+            </ion-col>
+          </ion-row>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </div>
+</ion-footer>

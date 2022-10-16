@@ -1,0 +1,105 @@
+.middle-ttl h2 {
+        font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #0A408A;
+    margin: 7px 0 0 -19px;
+}
+.left-back ion-icon { 
+    padding: 0;
+    font-size: 35px;
+    color: #000;
+}
+
+.header-md::after{
+    display:none;
+}
+.right-profile {
+    text-align: right;
+    vertical-align: middle;
+    margin-top: -7px;
+}
+.right-profile ion-icon {
+    background: #0A408A;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.notificason {
+    margin-right: 12px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.title-rw {
+    margin-bottom: 20px;
+}
+.title-rw h2{
+  font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    color: #333333;
+    border-left: 4px solid #0A408A;
+    padding-left: 10px;
+    }
+    .registration-field-section{
+        background: #FFFFFF;
+    margin-top: 17px;
+
+    z-index: 99999;
+}
+.form-ctrl {
+    width: 100%;
+    border: 1px solid #ccc;
+    --padding-start: 10px !important;
+    --padding-end: 10px !important;
+    border-radius: 5px;
+      font-family: "Poppins";
+}
+.custom-button {
+    --background: #0A408A !important;
+    --border-radius: 30px !important;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.roster-row{
+    background:#fff;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+    border-radius: 10px;
+    height: 100%;
+     }
+   
+ion-item {
+    --background: transperent;
+    padding: 0 10px 0 0;
+    --border-color: #d2d0e2 !important;
+    margin-bottom: 20px !important;
+}
+ion-item.view-history a {
+    margin: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #0A408A;
+}
+@media (prefers-color-scheme: dark){
+ion-item {
+    --background: transperent;
+    padding: 0 10px 0 0;
+    --border-color: #d2d0e2 !important;
+}
+.md body {
+    --ion-background-color: #ffffff !important;
+    }
+}   

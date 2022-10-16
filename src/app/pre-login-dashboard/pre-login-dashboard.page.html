@@ -1,0 +1,165 @@
+<ion-header>
+     <ion-grid>
+          <ion-row>
+              <ion-col size="2" class="left-back">
+                    <ion-icon name="menu"></ion-icon>   
+              </ion-col>
+              <ion-col size="4" class="middle-ttl">
+                <h2>Hello <span>there!</span></h2>
+              </ion-col>
+              <ion-col size="6" class="right-profile" >
+                    <img class="notificason" src="/assets/images/notification-bell.png">
+                    <ion-icon name="person" routerLink="/profile"></ion-icon>
+              </ion-col>
+          </ion-row>
+     </ion-grid>     
+</ion-header>
+<ion-content>
+    
+    <div class="dashboard-header">
+      <ion-button class="custom-button" routerLink="/inquiry">
+         <span> Enquiry Now</span>
+      </ion-button>   
+    </div>
+    <div class="title-rw">
+      <h2>Events</h2>
+      <a href="#">View All</a>
+    </div>
+
+    <div class="events-img-section">
+      <div class="img-row">
+   <!-- <img src="/assets/images/match-img.jpg">  -->
+
+
+
+
+      <ion-slides [options]="option" class="ion-margin-top">
+    
+    
+        <ion-slide *ngFor="let eventResults of eventResult" >
+          <div *ngFor="let eventResultsData of eventResults.banner let i=index">
+            <div *ngIf="i < 1">
+            <img src={{eventResultsData.fileName}}>
+            <!-- <h5>{{eventResults.name}}</h5> -->
+            <div class="img-caption">
+              <h5>{{eventResults.name}}</h5>
+            </div>
+            
+          </div>
+        </div>
+        </ion-slide>
+        
+       </ion-slides> 
+
+    </div>
+    </div>
+
+  
+
+  
+    <div class="title-rw">
+      <h2>REGISTER <span>NOW</span>!</h2>
+    </div>
+    <div class="bttns-row">
+        <ion-grid>
+          <ion-row>
+              <ion-col size="5" class="bttns-row-left">
+                    <ion-button class="custom-button" routerLink="/registration">
+                      <img src="/assets/images/soccer-player1.png" > <span>Player</span>
+                    </ion-button>  
+              </ion-col>
+              <ion-col size="2" class="bttns-row-middle">
+                    <h3></h3>   
+              </ion-col>
+              <ion-col size="5" class="bttns-row-right">
+                     <ion-button class="custom-button" routerLink="/registration">
+                      <img src="/assets/images/soccer-player1.png"  > <span >Coach</span>
+                    </ion-button>    
+              </ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+    <!-- <div class="title-rw">
+      <h2>RIGHT TO <span>PLAY</span>!</h2>
+    </div> -->
+    <!-- <div class="right-to-play-bdy">
+        <ion-grid>
+         
+          <ion-row>
+              <ion-col size="3" class="right-to-play-left">
+                      <img src="/assets/images/bnyn.png"> 
+              </ion-col>
+              <ion-col size="6" class="right-to-play-mdl">
+                      <h3>Star <span> Players</span></h3>
+              </ion-col>
+              <ion-col size="3" class="right-to-play-right">
+                      <ion-icon name="chevron-forward-outline"></ion-icon>
+              </ion-col>
+          </ion-row>
+        </ion-grid>
+    </div> -->
+
+    <div class="title-rw">
+      <h2>Login Now</h2>
+    </div>
+    <div class="bttns-row">
+      <ion-grid>
+        <ion-row>
+            <ion-button class="custom-button" routerLink="/coach-login">
+              <span> Login</span>
+           </ion-button> 
+        </ion-row>
+      </ion-grid>
+  </div>
+
+</ion-content>
+<ion-footer>
+    <div class="container">
+      <ion-grid>
+        <ion-row>
+          <ion-col  size="5" class="left-footer">
+            <ion-row>
+            <ion-col class="footer-con"  size="6">
+              <ion-icon name="home"></ion-icon>
+              <h5 class="act">Home</h5> 
+            </ion-col>
+            <ion-col class="footer-con"  size="6">
+              <ion-col size="6">
+              <ion-icon name="timer-outline"></ion-icon>
+              <h5>Tab 2</h5> 
+            </ion-col>
+                        </ion-col>
+          </ion-row>
+          </ion-col>
+          <ion-col  size="2" class="middle-footer">
+            <a class="white-round-p"><img src="/assets/images/home.png"></a>
+          </ion-col>
+          <ion-col  size="5" class="right-footer">
+            <ion-row>
+            <ion-col class="footer-con"  size="6">
+              <ion-icon name="calendar-clear-outline"></ion-icon>
+              <h5>Tab 3</h5> 
+            </ion-col>
+            <ion-col  class="footer-con"  size="6">
+              <ion-col  size="6">
+              <ion-icon name="person-outline"></ion-icon>
+              <h5>Tab 4</h5> 
+            </ion-col>
+            </ion-col>
+          </ion-row>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </div>
+</ion-footer>
+
+
+
+
+
+
+
+
+
+

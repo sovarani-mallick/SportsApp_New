@@ -1,0 +1,119 @@
+<ion-header >
+  
+    <ion-grid>
+          <ion-row>
+              <ion-col size="2" class="left-back">
+                    <ion-icon name="chevron-back-outline"></ion-icon>    
+              </ion-col>
+              <ion-col size="4" class="middle-ttl">
+                <h2>Dashboard</h2>
+              </ion-col>
+              <ion-col size="6" class="right-profile">
+                    <img class="notificason" src="/assets/images/notification-bell.png">
+                    <ion-icon name="person"></ion-icon>
+              </ion-col>
+          </ion-row>
+     </ion-grid>     
+
+</ion-header>
+
+<ion-content>
+    <div class="title-rw">
+      <h2>Event Title Goes Here</h2>
+    </div>
+    <div class="events-img-section">
+      <div class="img-row">
+      <img src="/assets/images/match-img.jpg">
+      <div class="img-caption">
+        <h5>Football Match</h5>
+      </div>
+      <h4>Event Title Goes Here</h4>
+      <div class="row-event1">
+          <img src="/assets/images/calendar.png">
+          <span>10th September, 2022 | 10:00 AM</span>
+      </div>
+    
+    <div class="row-event1">
+          <img src="/assets/images/map-location.png">
+          <span>Patia, Bhaubaneswar</span>
+      </div>
+    </div>
+    </div>
+    <div class="events-img-section">
+      <h3>EVENT DETAILS</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.   It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+    <a class="custom-button" id="open-modal" expand="block">Apply</a>
+<ion-modal class="single-event-apply-modal" trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+    <ng-template>
+      <ion-header>
+          <img class="close-img" (click)="cancel()" src="/assets/images/cancel.png">
+         
+      </ion-header>
+      <ion-content class="ion-padding">
+        <div class="event-pop-form">
+          <div class="registration-field-section">
+    <ion-list>
+      <ion-item lines="none">
+   <ion-input type="text" class="form-ctrl" placeholder="Name" ></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+   <ion-input type="text" class="form-ctrl" placeholder="Phone" ></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+   <ion-input type="text" class="form-ctrl" placeholder="Email" ></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+   <ion-button type="submit" class="custom-button">Apply</ion-button> 
+  </ion-item>
+ 
+</ion-list>
+
+</div>
+  
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>
+<ion-footer>
+    <div class="container">
+      <ion-grid>
+        <ion-row>
+          <ion-col  size="5" class="left-footer">
+            <ion-row>
+            <ion-col class="footer-con"  size="6">
+              <ion-icon name="home"></ion-icon>
+              <h5 class="act">Home</h5> 
+            </ion-col>
+            <ion-col class="footer-con"  size="6">
+              <ion-col size="6">
+              <ion-icon name="timer-outline"></ion-icon>
+              <h5>Tab 2</h5> 
+            </ion-col>
+                        </ion-col>
+          </ion-row>
+          </ion-col>
+          <ion-col  size="2" class="middle-footer">
+            <a class="white-round-p"><img src="/assets/images/home.png"></a>
+          </ion-col>
+          <ion-col  size="5" class="right-footer">
+            <ion-row>
+            <ion-col class="footer-con"  size="6">
+              <ion-icon name="calendar-clear-outline"></ion-icon>
+              <h5>Tab 3</h5> 
+            </ion-col>
+            <ion-col  class="footer-con"  size="6">
+              <ion-col  size="6">
+              <ion-icon name="person-outline"></ion-icon>
+              <h5>Tab 4</h5> 
+            </ion-col>
+            </ion-col>
+          </ion-row>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </div>
+</ion-footer>

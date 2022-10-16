@@ -1,0 +1,115 @@
+.middle-ttl h2 {
+        font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #0A408A;
+    margin: 7px 0 0 -19px;
+}
+.left-back ion-icon { 
+    padding: 0;
+    font-size: 35px;
+    color: #000;
+}
+
+.header-md::after{
+    display:none;
+}
+.right-profile {
+    text-align: right;
+    vertical-align: middle;
+    margin-top: -7px;
+}
+.right-profile ion-icon {
+    background: #0A408A;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.notificason {
+    margin-right: 12px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.title-rw {
+    margin-bottom: 20px;
+}
+.title-rw h2{
+  font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    color: #333333;
+    border-left: 4px solid #0A408A;
+    padding-left: 10px;
+    }
+  
+.events-img-section {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    background: #fff;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.img-row {
+    width: 100%;
+    padding: 15px;
+    
+}
+.img-row img {
+    width: 100%;
+    position:relative;
+}
+.img-caption{
+    position: absolute;
+    bottom: 120px;
+    left: 25px;
+    background: url(/assets/images/ribbon.png) no-repeat !important;
+    height: 35px;
+    width: 95%;
+}
+.img-caption h5{
+    color:#fff;
+    font-size:15px;
+    color: #fff;
+    font-size: 15px;
+    margin: 8px;
+    font-family: "Poppins";
+}
+.events-img-section h4{
+     font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0A408A;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.row-event1{
+    width:100%;
+    margin-bottom:10px;
+    margin-left: 5px;
+}
+.row-event1 img{
+    vertical-align:middle;
+    width:auto;
+}
+.row-event1 span{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+color: #0A408A;
+display:inline-block;
+margin-left:10px;
+}
